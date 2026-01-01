@@ -7,6 +7,17 @@
 [![GitHub forks](https://img.shields.io/github/forks/qmk/qmk_firmware.svg?style=social&label=Fork)](https://github.com/qmk/qmk_firmware/)
 
 This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the Clueboard product line.
+## Personal Setup Notes
+
+Keymap stored in /qmk_firmware/keyboards/lily58/johnnywilkens/keymap.c
+
+Also stored as json in /qmk_firmware/coldh58v...
+
+_Steps_
+1. upload json to qmk configurator to change bindings
+2. download new json and use qmk json2c to convert to keymap.c
+3. move/replace keymap.c to proper directory (e.g. lily58/johnnywilkens/)
+4. flash new software with qmk flash -kb lily58/rev1 -km johnnywilkens
 
 ## Documentation
 
