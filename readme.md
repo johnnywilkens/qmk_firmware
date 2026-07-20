@@ -15,7 +15,7 @@ Also stored as json in /qmk_firmware/coldh58v...
 
 _Steps_
 1. upload json to qmk configurator to change bindings
-2. download new json and use qmk json2c to convert to keymap.c
+2. download new json and use qmk json2c to convert to keymap.c e.g. `qmk json2c -o keymap.c coldh58v35.json`
 3. move/replace keymap.c to proper directory (e.g. lily58/johnnywilkens/)
 4. enter boot mode on keyboard by double tapping button next to micro-controller
 5. flash new software with qmk flash -kb lily58/rev1 -km johnnywilkens -e USER_NAME=holykeebs (last arg. needed to use holykeebs custom logic for the pcb I think)
